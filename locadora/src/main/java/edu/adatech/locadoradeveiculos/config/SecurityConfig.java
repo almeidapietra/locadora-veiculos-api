@@ -21,7 +21,7 @@ public class SecurityConfig {
         http
                 .csrf().disable()
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/api/agencias/**").authenticated()
+                        .requestMatchers("/api/agencias/**","/api/veiculos/**").authenticated()
                         .anyRequest().permitAll()
                 )
                 .httpBasic(); // Para autenticação básica, como no Postman
