@@ -64,18 +64,13 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Dependência para PostgreSQL (caso seja o banco de dados escolhido) -->
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
 		<!-- Dependência para validação de dados -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+
+		<!-- Dependência para Lombok (ajuda a reduzir o código boilerplate) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
