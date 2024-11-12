@@ -64,13 +64,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- Dependência para PostgreSQL (caso seja o banco de dados escolhido) -->
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
 		<!-- Dependência para validação de dados -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -21,9 +21,12 @@ public class SecurityConfig {
         http
                 .csrf().disable()
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/api/agencias/**","/api/veiculos/**", "api/clientes/**").authenticated()
+                        .requestMatchers("/api/agencias/**", "/api/veiculos/**", "/api/clientes/**").authenticated()
+                        .requestMatchers("/h2-console/**").permitAll() // permite acesso ao console do H2
                         .anyRequest().permitAll()
                 )
+                .headers().frameOptions().sameOrigin() // permite o uso de frames para o H2
+                .and()
                 .httpBasic(); // Para autenticação básica, como no Postman
         return http.build();
     }
