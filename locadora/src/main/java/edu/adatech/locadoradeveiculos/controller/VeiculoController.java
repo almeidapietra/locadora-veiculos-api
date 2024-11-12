@@ -40,5 +40,4 @@ public class VeiculoController {
         return ResponseEntity.ok("Veículo deletado com sucesso.");
     }
 
-
 }
