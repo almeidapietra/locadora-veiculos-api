@@ -43,7 +43,6 @@ public class VeiculoController {
         veiculoService.deletarVeiculo(id);
         return ResponseEntity.ok("Veículo deletado com sucesso.");
     }
-
     @GetMapping("/{id}")
     public ResponseEntity<VeiculoModel> buscarVeiculoPorId(@PathVariable Long id) {
         Optional<VeiculoModel> veiculoOptional = veiculoService.buscarVeiculoPorId(id);
