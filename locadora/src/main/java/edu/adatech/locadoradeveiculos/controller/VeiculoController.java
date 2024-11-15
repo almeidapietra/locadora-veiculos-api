@@ -1,9 +1,12 @@
 package edu.adatech.locadoradeveiculos.controller;
 
 import edu.adatech.locadoradeveiculos.enums.TipoVeiculo;
+import edu.adatech.locadoradeveiculos.model.AgenciaModel;
 import edu.adatech.locadoradeveiculos.model.VeiculoModel;
+import edu.adatech.locadoradeveiculos.service.AgenciaService;
 import edu.adatech.locadoradeveiculos.service.VeiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +19,10 @@ public class VeiculoController {
 
     @Autowired
     private VeiculoService veiculoService;
-
+    @Autowired
+    public VeiculoController(VeiculoService veiculoService) {
+        this.veiculoService = veiculoService;
+    }
     @PostMapping("/cadastrar")
     public ResponseEntity<VeiculoModel> cadastrarVeiculo(@RequestBody VeiculoModel veiculo) {
         return ResponseEntity.ok(veiculoService.cadastrarVeiculo(veiculo));
