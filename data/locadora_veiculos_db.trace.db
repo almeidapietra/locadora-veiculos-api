@@ -295,3 +295,6 @@ Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection wa
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	... 91 more
+2024-11-15 17:06:02.788971-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VEICULOS_MODEL" not found; SQL statement:
+Select * from VEICULOS_MODEL [42102-224]
