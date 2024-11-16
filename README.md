@@ -7,7 +7,7 @@ http://localhost:8080/h2-console
 Na página de login do H2, insira as seguintes informações:
 
 Driver Class: org.h2.Driver
-JDBC URL: jdbc:h2:./data/locadora_veiculos_db
+JDBC URL: jdbc:h2:file:./locadora_veiculos
 User Name: sa
 Password: (deixe em branco)
 
