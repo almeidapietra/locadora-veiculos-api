@@ -1,8 +1,8 @@
 package edu.adatech.locadoradeveiculos.controller;
 
+import edu.adatech.locadoradeveiculos.model.ClienteModel;
 import edu.adatech.locadoradeveiculos.model.VeiculoModel;
 import edu.adatech.locadoradeveiculos.model.Aluguel;
-import edu.adatech.locadoradeveiculos.model.Cliente;
 import edu.adatech.locadoradeveiculos.repository.AluguelRepository;
 import edu.adatech.locadoradeveiculos.service.AluguelService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +28,7 @@ public class AluguelController {
 
     @PostMapping("/alugar")
     public Aluguel alugarVeiculo(
-            @RequestParam Cliente cliente,
+            @RequestParam ClienteModel cliente,
             @RequestParam VeiculoModel veiculo,
             @RequestParam String localRetirada) {
 

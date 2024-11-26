@@ -18,7 +18,7 @@ public class Aluguel {
     private VeiculoModel veiculo;
 
     @ManyToOne
-    private Cliente cliente;
+    private ClienteModel cliente;
 
     private String localRetirada;
     private String localDevolucao;
@@ -29,7 +29,7 @@ public class Aluguel {
 
     // Construtores, Getters e Setters
 
-    public Aluguel(VeiculoModel veiculo, Cliente cliente, String localRetirada, Instant dataInicio) {
+    public Aluguel(VeiculoModel veiculo, ClienteModel cliente, String localRetirada, Instant dataInicio) {
         this.veiculo = veiculo;
         this.cliente = cliente;
         this.localRetirada = localRetirada;

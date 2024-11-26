@@ -1,7 +1,7 @@
 package edu.adatech.locadoradeveiculos.service;
 
 import edu.adatech.locadoradeveiculos.model.Aluguel;
-import edu.adatech.locadoradeveiculos.model.Cliente;
+import edu.adatech.locadoradeveiculos.model.ClienteModel;
 import edu.adatech.locadoradeveiculos.model.VeiculoModel;
 import edu.adatech.locadoradeveiculos.repository.AluguelRepository;
 import edu.adatech.locadoradeveiculos.repository.VeiculoRepository;
@@ -22,7 +22,7 @@ public class AluguelService {
     @Autowired
     private VeiculoRepository veiculoRepository;
 
-    public Aluguel alugarVeiculo(Cliente cliente, VeiculoModel veiculo, String localRetirada, Instant dataInicio) {
+    public Aluguel alugarVeiculo(ClienteModel cliente, VeiculoModel veiculo, String localRetirada, Instant dataInicio) {
         if (!isVeiculoDisponivel(veiculo)) {
             throw new IllegalStateException("Veículo não disponível para aluguel.");
         }
