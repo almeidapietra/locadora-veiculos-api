@@ -9,19 +9,17 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Getter
+@Setter
 @Table(name = "CLIENTES")
 public class ClienteModel {
 
     @Id
-    @Getter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Getter
     private String nome;
 
-    @Getter
-    @Setter
     private String logradouro;
 
     public void setNome(String nome) {
