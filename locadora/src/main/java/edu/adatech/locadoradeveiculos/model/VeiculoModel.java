@@ -61,4 +61,6 @@ public class VeiculoModel {
         return placa;
     }
 
+    public void setId(long l) {
+    }
 }
