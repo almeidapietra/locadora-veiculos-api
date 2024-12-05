@@ -1,10 +1,9 @@
-package edu.adatech.locadora.service;
+package edu.adatech.locadoradeveiculos.service;
 
 
 import edu.adatech.locadoradeveiculos.model.ClienteModel;
 import edu.adatech.locadoradeveiculos.model.ClientePessoaFisicaModel;
 import edu.adatech.locadoradeveiculos.repository.ClienteRepository;
-import edu.adatech.locadoradeveiculos.service.ClienteService;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;

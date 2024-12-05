@@ -1,6 +1,5 @@
-package edu.adatech.locadora.controller;
+package edu.adatech.locadoradeveiculos.controller;
 
-import edu.adatech.locadoradeveiculos.controller.ClienteController;
 import edu.adatech.locadoradeveiculos.model.ClienteModel;
 import edu.adatech.locadoradeveiculos.model.ClientePessoaFisicaModel;
 import edu.adatech.locadoradeveiculos.model.ClientePessoaJuridicaModel;

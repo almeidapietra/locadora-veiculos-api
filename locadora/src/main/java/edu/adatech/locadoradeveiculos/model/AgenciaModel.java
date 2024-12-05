@@ -29,7 +29,6 @@ public class AgenciaModel {
         return id;
     }
 
-    // Método adicionado para definir o ID
     public void setId(Long id) {
         this.id = id;
     }
