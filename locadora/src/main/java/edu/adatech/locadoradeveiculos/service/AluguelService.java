@@ -27,7 +27,12 @@ public class AluguelService {
             throw new IllegalStateException("Veículo não disponível para aluguel.");
         }
 
-        Aluguel novoAluguel = new Aluguel(veiculo, cliente, localRetirada, dataInicio);
+        Aluguel novoAluguel = new Aluguel();
+        novoAluguel.setCliente(cliente);
+        novoAluguel.setVeiculo(veiculo);
+        novoAluguel.setLocalRetirada(localRetirada);
+        novoAluguel.setDataInicio(dataInicio);
+
         return aluguelRepository.save(novoAluguel);
     }
 

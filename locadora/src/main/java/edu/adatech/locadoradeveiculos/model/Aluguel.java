@@ -27,17 +27,77 @@ public class Aluguel {
     private boolean ativo = true;
     private boolean devolvido = false;
 
-    // Construtores, Getters e Setters
 
-    public Aluguel(VeiculoModel veiculo, ClienteModel cliente, String localRetirada, Instant dataInicio) {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public VeiculoModel getVeiculo() {
+        return veiculo;
+    }
+
+    public void setVeiculo(VeiculoModel veiculo) {
         this.veiculo = veiculo;
+    }
+
+    public ClienteModel getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(ClienteModel cliente) {
         this.cliente = cliente;
+    }
+
+    public String getLocalRetirada() {
+        return localRetirada;
+    }
+
+    public void setLocalRetirada(String localRetirada) {
         this.localRetirada = localRetirada;
+    }
+
+    public String getLocalDevolucao() {
+        return localDevolucao;
+    }
+
+    public void setLocalDevolucao(String localDevolucao) {
+        this.localDevolucao = localDevolucao;
+    }
+
+    public Instant getDataInicio() {
+        return dataInicio;
+    }
+
+    public void setDataInicio(Instant dataInicio) {
         this.dataInicio = dataInicio;
     }
 
-    public Aluguel() {
+    public Instant getDataFim() {
+        return dataFim;
+    }
 
+    public void setDataFim(Instant dataFim) {
+        this.dataFim = dataFim;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
+
+    public boolean isDevolvido() {
+        return devolvido;
+    }
+
+    public void setDevolvido(boolean devolvido) {
+        this.devolvido = devolvido;
     }
 
     public void finalizarAluguel(String localDevolucao, Instant dataFim) {
