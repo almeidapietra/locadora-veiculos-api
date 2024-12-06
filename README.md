@@ -88,7 +88,7 @@ mvn test
 - GET /api/alugueis - Lista todos os aluguéis
 
 ### Agências
-- POST /api/agencias - Cria nova ageência
+- POST /api/agencias - Cria nova agência
 - PUT /api/agencias/{id}/ Atualiza agência por ID
 - GET /api/agencias - Lista todos as agências
 - DELETE /api/agencias/{id} - Remove agência
