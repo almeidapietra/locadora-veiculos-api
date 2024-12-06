@@ -1,9 +1,9 @@
 # 🚗 API Locadora de Veículos
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/almeidapietra/locadora-veiculos-api/blob/main/LICENSE)
 
 Este projeto foi desenvolvido como trabalho final da Formação Back-end ADA TECH. Uma API REST para gerenciamento de uma locadora de veículos, desenvolvida em Java com Spring Boot.
 
 ## 👥 Integrantes do Grupo
-(Em ordem alfabética)
 - Gustavo de Queiroz
 - Mayara Santos
 - Pietra Almeida
@@ -91,6 +91,3 @@ mvn test
 
 Este é um projeto acadêmico desenvolvido como trabalho final. Contribuições, sugestões e melhorias são sempre bem-vindas.
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
