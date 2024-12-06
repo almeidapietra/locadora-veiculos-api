@@ -87,6 +87,12 @@ mvn test
 - PUT /api/alugueis/{id}/devolucao - Registra devolução
 - GET /api/alugueis - Lista todos os aluguéis
 
+### Agências
+- POST /api/agencias - Cria nova ageência
+- PUT /api/agencias/{id}/ Atualiza agência por ID
+- GET /api/agencias - Lista todos as agências
+- DELETE /api/agencias/{id} - Remove agência
+
 ## 🤝 Contribuição
 
 Este é um projeto acadêmico desenvolvido como trabalho final. Contribuições, sugestões e melhorias são sempre bem-vindas.
