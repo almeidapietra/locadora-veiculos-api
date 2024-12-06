@@ -16,7 +16,6 @@ Este projeto foi desenvolvido como trabalho final da Formação Back-end ADA TEC
 - H2 Database
 - Maven
 - JUnit
-- Swagger/OpenAPI
 
 ## 📋 Funcionalidades Principais
 - Cadastro e gerenciamento de veículos
