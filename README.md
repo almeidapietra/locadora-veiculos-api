@@ -49,11 +49,6 @@ O projeto utiliza o H2 Database, um banco de dados em memória. Para acessar o c
    - User Name: `sa`
    - Password: (deixe em branco)
 
-## 📝 Documentação da API
-
-A documentação completa da API está disponível através do Swagger UI:
-- URL: `http://localhost:8080/swagger-ui.html`
-
 ## 🧪 Testes
 
 O projeto inclui testes unitários e de integração. Para executar os testes:
