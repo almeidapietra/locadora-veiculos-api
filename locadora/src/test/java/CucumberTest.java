@@ -1,4 +1,4 @@
-package edu.adatech.locadoradeveiculos;
+package edu.adatech.lgirocadoradeveiculos;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
